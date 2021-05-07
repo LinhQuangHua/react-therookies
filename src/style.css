@@ -19,10 +19,9 @@ p {
 }
 
 .navItem {
-  padding: 10px;
+
   border: solid white 2px;
   color: #ffffff;
-  
 }
 .navLink {
   color: #000000;
@@ -34,17 +33,12 @@ p {
   color: #ffffff;
 }
 
-.navItem:hover
-{
+.navItem:hover {
   background-color: red;
 }
 
-
-.navItem .active
-{
+.active {
   background-color: red;
-  color: #ffffff;
+  color: #ffff;
 }
-
-
 

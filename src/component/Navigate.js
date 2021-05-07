@@ -1,6 +1,6 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import { Nav, NavItem } from 'reactstrap';
+import { NavLink as RRNavLink } from 'react-router-dom';
+import { Nav, NavItem, NavLink } from 'reactstrap';
 import '../style.css';
 
 export default function Navigate() {
@@ -17,34 +17,34 @@ export default function Navigate() {
         <h6 className="name-asset">Online Asset Management</h6>
       </div>
       <br />
-      <Nav vertical className="nav" >
-        <NavItem className="navItem" >
-          <NavLink exact to="/" className="navLink" activeClassName="active">
+      <Nav vertical className="nav">
+        <NavItem className="navItem" activeClassName="active">
+          <NavLink tag={RRNavLink} exact to="/" className="navLink">
             Home
           </NavLink>
         </NavItem>
         <NavItem className="navItem">
-          <NavLink to="/user" className="navLink">
+          <NavLink tag={RRNavLink} to="/user" className="navLink">
             Manage User
           </NavLink>
         </NavItem>
         <NavItem className="navItem">
-          <NavLink to="/asset" className="navLink">
+          <NavLink tag={RRNavLink} to="/asset" className="navLink">
             Manage Assset
           </NavLink>
         </NavItem>
         <NavItem className="navItem">
-          <NavLink to="/assignment" className="navLink">
+          <NavLink tag={RRNavLink} to="/assignment" className="navLink">
             Manage Assignment
           </NavLink>
         </NavItem>
         <NavItem className="navItem">
-          <NavLink to="/request" className="navLink">
+          <NavLink tag={RRNavLink} to="/request" className="navLink">
             Request for Returning
           </NavLink>
         </NavItem>
         <NavItem className="navItem">
-          <NavLink to="/report" className="navLink">
+          <NavLink tag={RRNavLink} to="/report" className="navLink">
             Report
           </NavLink>
         </NavItem>
