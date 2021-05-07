@@ -3,6 +3,8 @@ p {
   font-family: Lato;
 }
 
+/*Navigate*/
+
 .nav-container {
   margin-left: 20px;
 }
@@ -22,8 +24,8 @@ p {
   color: #000000;
   font-weight: bold;
   text-decoration: none;
-   border: solid white 2px;
-   padding: 10px;
+  border: solid white 2px;
+  padding: 10px;
 }
 
 .navLink:hover {
@@ -36,3 +38,23 @@ p {
   color: #ffff;
 }
 
+/*PageLayout*/
+
+.row-home {
+  background-color: rgba(207, 35, 56, 1);
+  color: #ffffff;
+  height: 50px;
+  padding: 10px;
+}
+
+.home {
+  margin-left: 50px;
+}
+
+.pt-3 {
+  padding: 40px;
+}
+
+.p-4 {
+  margin-top: 50px;
+}
