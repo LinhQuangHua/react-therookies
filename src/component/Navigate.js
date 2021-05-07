@@ -1,8 +1,7 @@
 import React from 'react';
-import { Link } from 
-"react-router-dom";
-
+import { Link } from "react-router-dom";
 import { Nav, NavItem, NavLink } from 'reactstrap';
+import '../style.css';
 
 export default function Navigate() {
   const [selected, setSelected] = React.useState(0)
@@ -15,44 +14,44 @@ export default function Navigate() {
       </div>
       <br/>
       <Nav vertical style={{ backgroundColor: 'rgba(239,241,245,1)' }}>
-      <NavItem>
-            <Link to="/" style={{ textDecoration: 'none' }}>
-             <NavLink style={{ color: '#000000' }}>
+      <NavItem className="navItem">
+            <Link to="/" className="link">
+             <NavLink className="navLink">
                 Home
             </NavLink>
           </Link>
       </NavItem>
-      <NavItem>
-        <Link to="/user" style={{ textDecoration: 'none' }}>
-            <NavLink style={{ color: '#000000' }}>
+      <NavItem className="navItem">
+        <Link to="/user" className="link">
+            <NavLink className="navLink">
                 Manage User
             </NavLink>
           </Link>
       </NavItem>
-      <NavItem>
-         <Link to="/asset" style={{ textDecoration: 'none' }}>
-            <NavLink style={{ color: '#000000' }}>
+      <NavItem className="navItem">
+         <Link to="/asset" className="link">
+            <NavLink className="navLink">
                 Manage Assset
             </NavLink>
           </Link>
       </NavItem>
-      <NavItem>
-        <Link to="/assignment" style={{ textDecoration: 'none' }}>
-            <NavLink style={{ color: '#000000' }}>
+      <NavItem className="navItem">
+        <Link to="/assignment" className="link">
+            <NavLink className="navLink">
                 Manage Assignment
             </NavLink>
           </Link>
       </NavItem>
-      <NavItem>
-         <Link to="/request" style={{ textDecoration: 'none' }}>
-            <NavLink style={{ color: '#000000' }}>
+      <NavItem className="navItem">
+         <Link to="/request" className="link">
+            <NavLink className="navLink">
                 Request for Returning
             </NavLink>
           </Link>
       </NavItem>
-      <NavItem>
-         <Link to="/report" style={{ textDecoration: 'none' }}>
-            <NavLink style={{ color: '#000000' }}>
+      <NavItem className="navItem">
+         <Link to="/report" className="link">
+            <NavLink className="navLink">
                 Report
             </NavLink>
           </Link>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
-import Home from '.././page/home';
+
 
 export default function PageLayout({ header, nav, content }) {
   return (
