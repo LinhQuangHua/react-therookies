@@ -14,14 +14,14 @@ export default function Navigate() {
       </div>
       <br/>
       <Nav vertical style={{ backgroundColor: 'rgba(239,241,245,1)' }}>
-      <NavItem className="navItem">
+      <NavItem className="navItem" activeClassName="active">
             <Link to="/" className="link">
              <NavLink className="navLink">
                 Home
             </NavLink>
           </Link>
       </NavItem>
-      <NavItem className="navItem">
+      <NavItem className="navItem" activeClassName="active">
         <Link to="/user" className="link">
             <NavLink className="navLink">
                 Manage User

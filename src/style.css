@@ -2,10 +2,18 @@ h1, p {
   font-family: Lato;
 }
 
-.navItem:hover
+.navItem:hover, .navLink:hover
 {
   background-color: rgba(207,35,56,1);
+  color: #ffffff;
 }
+
+.navItem .navLink .active
+{
+  background-color: rgba(207,35,56,1);
+  color: #ffffff;
+}
+
 
 .link
 {
@@ -16,9 +24,4 @@ h1, p {
 {
   color: #000000;
   border: solid white 2px; 
-}
-
-.navLink:hover
-{
-  color: #ffffff; 
 }
