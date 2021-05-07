@@ -18,23 +18,17 @@ p {
   color: red;
 }
 
-.navItem {
-
-  border: solid white 2px;
-  color: #ffffff;
-}
 .navLink {
   color: #000000;
   font-weight: bold;
   text-decoration: none;
+   border: solid white 2px;
+   padding: 10px;
 }
 
-.navItem:hover > .navLink {
-  color: #ffffff;
-}
-
-.navItem:hover {
+.navLink:hover {
   background-color: red;
+  color: #ffffff;
 }
 
 .active {
