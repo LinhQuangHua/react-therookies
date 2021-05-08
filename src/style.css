@@ -3,6 +3,10 @@ p {
   font-family: Lato;
 }
 
+.name-list
+{
+  color: rgba(207,35,56,1);
+}
 /*Navigate*/
 
 .nav-container {
@@ -17,7 +21,8 @@ p {
 }
 
 .name-asset {
-  color: red;
+  color: rgba(207,35,56,1);
+  font-weight: bold;
 }
 
 .navLink {
@@ -29,12 +34,12 @@ p {
 }
 
 .navLink:hover {
-  background-color: red;
+  background-color: rgba(207,35,56,1);
   color: #ffffff;
 }
 
 .active {
-  background-color: red;
+  background-color: rgba(207,35,56,1);
   color: #ffff;
 }
 

@@ -1,5 +1,5 @@
 import React from 'react';
 
 export default function Assignment(props) {
-  return <h1>Manage Assignment</h1>;
+  return <h5 className="name-list">Assignment List</h5>;
 }

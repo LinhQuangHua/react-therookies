@@ -1,7 +1,6 @@
 import React from 'react';
+import '../style.css'
 
 export default function Home(props) {
-  return (
-    <h1>Home</h1>
-  );
+  return <h5 className="name-list">My Assignment</h5>;
 }

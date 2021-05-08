@@ -1,5 +1,5 @@
 import React from 'react';
 
 export default function Report(props) {
-  return <h1>Report</h1>;
+  return <h5 className="name-list">Report</h5>;
 }
