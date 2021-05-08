@@ -15,6 +15,7 @@ p {
 
 .nav {
   background-color: rgba(239, 241, 245, 1);
+  width: 220px;
 }
 .logo {
   width: 120px;

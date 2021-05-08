@@ -7,7 +7,7 @@ import Assignment from './page/assignment/assignment';
 import Request from './page/request/request';
 import Report from './page/report/report';
 
-export default function Routes(props) {
+export default function Routes() {
   return (
     <Switch>
       <Route exact path="/" component={Home} />
