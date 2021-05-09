@@ -1,13 +1,13 @@
 import React from 'react';
 import { Input } from 'reactstrap';
+import '../style.css';
 
 export default function SelectDate() {
   return (
       <>
         <Input
-          type="datetime"
-          name="datetime"
-          id="exampleDatetime"
+          type="date"
+          id="select-date"
           placeholder="datetime placeholder"
         />
       </>

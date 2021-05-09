@@ -3,9 +3,8 @@ p {
   font-family: Lato;
 }
 
-.name-list
-{
-  color: rgba(207,35,56,1);
+.name-list {
+  color: rgba(207, 35, 56, 1);
 }
 /*Navigate*/
 
@@ -22,7 +21,7 @@ p {
 }
 
 .name-asset {
-  color: rgba(207,35,56,1);
+  color: rgba(207, 35, 56, 1);
   font-weight: bold;
 }
 
@@ -35,12 +34,12 @@ p {
 }
 
 .navLink:hover {
-  background-color: rgba(207,35,56,1);
+  background-color: rgba(207, 35, 56, 1);
   color: #ffffff;
 }
 
 .active {
-  background-color: rgba(207,35,56,1);
+  background-color: rgba(207, 35, 56, 1);
   color: #ffff;
 }
 
@@ -63,4 +62,11 @@ p {
 
 .p-4 {
   margin-top: 50px;
+}
+
+/*Select day */
+#select-date
+{
+  width: 20%;
+  height: 30px;
 }
