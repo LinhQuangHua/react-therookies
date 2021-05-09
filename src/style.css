@@ -65,8 +65,26 @@ p {
 }
 
 /*Select day */
-#select-date
-{
-  width: 20%;
+#select-date {
+  width: 165px;
   height: 30px;
 }
+
+#select-date[type='date']::before {
+  content: attr(data-placeholder);
+  width: 165px;
+}
+
+#select-date[type='date']:focus::before,
+#select-date[type='date']:valid::before {
+  display: none;
+}
+
+/*SearchBar*/
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+/*SearchBar*/
