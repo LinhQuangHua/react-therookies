@@ -1,6 +1,7 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap';
 import SelectDate from '../../component/SelectDate';
+import SearchBar from '../../component/SearchBar';
 
 export default function Request() {
   return (
@@ -9,11 +10,12 @@ export default function Request() {
       <Row>
         <Col />
         <Col>
-          <SelectDate namedate="Returned Date"/>
+          <SelectDate namedate="Returned Date" />
         </Col>
         <Col />
-        <Col />
-        <Col />
+        <Col>
+          <SearchBar />
+        </Col>
       </Row>
     </>
   );

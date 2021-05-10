@@ -68,6 +68,7 @@ p {
 #select-date {
   width: 165px;
   height: 30px;
+  border-radius: 10px;
 }
 
 #select-date[type='date']::before {
@@ -81,10 +82,29 @@ p {
 }
 
 /*SearchBar*/
-.search {
-  width: 100%;
-  position: relative;
-  display: flex;
+
+* {
+  box-sizing: border-box;
 }
 
-/*SearchBar*/
+form.example input[type='text'] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 165px;
+  height: 30px;
+  background: #ffffff;
+  border-radius: 10px 0px 0px 10px;
+}
+
+form.example button {
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  color: #000000;
+  font-size: 14px;
+  border: 1px solid grey;
+  border-left: none;
+  border-radius: 0px 10px 10px 0px;
+}
