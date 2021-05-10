@@ -68,7 +68,8 @@ p {
 #select-date {
   width: 165px;
   height: 30px;
-  border-radius: 10px;
+  border-radius: 5px;
+  border: 1px solid grey;
 }
 
 #select-date[type='date']::before {
@@ -79,6 +80,14 @@ p {
 #select-date[type='date']:focus::before,
 #select-date[type='date']:valid::before {
   display: none;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+/*CreateButton*/
+
+.btn-create {
+  font-size: 14px;
 }
 
 /*SearchBar*/
@@ -95,7 +104,7 @@ form.example input[type='text'] {
   width: 165px;
   height: 30px;
   background: #ffffff;
-  border-radius: 10px 0px 0px 10px;
+  border-radius: 5px 0px 0px 5px;
 }
 
 form.example button {
@@ -106,5 +115,5 @@ form.example button {
   font-size: 14px;
   border: 1px solid grey;
   border-left: none;
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 0px 5px 5px 0px;
 }
