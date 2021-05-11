@@ -10,7 +10,13 @@ import '../../style.css';
   },{
     id:2,
     name:"Not Available"
+  },  {id:3,
+    name:"Available"
+  },{
+    id:4,
+    name:"Not Available"
   }]
+
 
   const asset = 
   [ {
@@ -35,15 +41,23 @@ export default function AssetCreateNew(){
     const { id } = useParams();
     const [dataEdit, setEdit] = React.useState(null)
     const [stateSelected, setStateSelected] = React.useState(null)
+    const [stateCurrent, setStateCurrent] = React.useState([]);
+    let stateAssetCurrent = [];
+
     React.useEffect(() => {
         if (id) {
           //let data = asset[1]
           let data = asset.find((data) => data.id === Number(id))
           setEdit(data);
           setStateSelected(data.state)
+          stateAssetCurrent(stateAsset);
           console.log(data)
             //get to server;
             // dataEdit = dataServer
+        }
+        else
+        {
+          setStateCurrent(stateAsset.splice(0,2));
         }
     }, [id])
   const handleSubmit = event => {
@@ -114,7 +128,7 @@ export default function AssetCreateNew(){
               <span>State</span>
             </Col>
             <Col className="col-create-new">
-            {stateAsset.map(item => (
+            {stateCurrent.map(item => (
               <label class="container-radio">
                 {item.name}
                 <input
