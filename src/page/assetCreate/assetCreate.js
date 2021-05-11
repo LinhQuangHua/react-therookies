@@ -7,14 +7,16 @@ import '../../style.css';
   const stateAsset = [{
     id:1,
     name:"Available"
-  },{
+  },
+  {
     id:2,
     name:"Not Available"
-  },  {id:3,
-    name:"Available"
+  },  
+  {id:3,
+    name:"Watting for recycling"
   },{
     id:4,
-    name:"Not Available"
+    name:"Recycle"
   }]
 
 
@@ -50,7 +52,7 @@ export default function AssetCreateNew(){
           let data = asset.find((data) => data.id === Number(id))
           setEdit(data);
           setStateSelected(data.state)
-          stateAssetCurrent(stateAsset);
+          setStateCurrent(stateAsset);
           console.log(data)
             //get to server;
             // dataEdit = dataServer
