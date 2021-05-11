@@ -13,12 +13,8 @@ export default function PageLayout({ header, nav, content, rename }) {
           <Col>{header}</Col>
         </Row>
         <Row className="h-100">
-          <Col className="pt-3" xs={4}>
-            {nav}
-          </Col>
-          <Col className="p-4">
-            {content}
-          </Col>
+          <Col className="pt-3 col-3">{nav}</Col>
+          <Col className="p-4">{content}</Col>
         </Row>
       </Container>
     </>

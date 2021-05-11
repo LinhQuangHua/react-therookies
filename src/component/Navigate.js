@@ -19,22 +19,47 @@ export default function Navigate(props) {
       </div>
       <br />
       <Nav vertical className="nav">
-        <NavLink exact to="/" className="navLink" onClick={() => props.changeWord("Home")}>
+        <NavLink
+          exact
+          to="/"
+          className="navLink"
+          onClick={() => props.changeWord('Home')}
+        >
           Home
         </NavLink>
-        <NavLink to="/user" className="navLink" onClick={() => props.changeWord("Manage User")}>
+        <NavLink
+          to="/user"
+          className="navLink"
+          onClick={() => props.changeWord('Manage User')}
+        >
           Manage User
         </NavLink>
-        <NavLink to="/asset" className="navLink" onClick={() => props.changeWord("Manage Asset")}>
+        <NavLink
+          to="/asset"
+          className="navLink"
+          onClick={() => props.changeWord('Manage Asset')}
+        >
           Manage Assset
         </NavLink>
-        <NavLink to="/assignment" className="navLink" onClick={() => props.changeWord("Manage Assignment")}>
+        <NavLink
+          to="/assignment"
+          className="navLink"
+          onClick={() => props.changeWord('Manage Assignment')}
+        >
           Manage Assignment
         </NavLink>
-        <NavLink to="/request" className="navLink" onClick={() => props.changeWord("Request for Returning")}>
+        <NavLink
+          to="/request"
+          className="navLink"
+          onClick={() => props.changeWord('Request for Returning')}
+        >
           Request for Returning
         </NavLink>
-        <NavLink to="/report" className="navLink" onClick={() => props.changeWord("Report")}>
+        <NavLink
+          to="/report"
+          className="navLink"
+          onClick={() => props.changeWord('Report')}
+        >
           Report
         </NavLink>
       </Nav>

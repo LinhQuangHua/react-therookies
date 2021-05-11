@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap';
+import { Link } from 'react-router-dom';
 import SearchBar from '../../component/SearchBar';
 import CreateNew from '../../component/CreateNew';
 import FilterState from '../../component/FilterState';
@@ -19,7 +20,9 @@ export default function Asset() {
           <SearchBar />
         </Col>
         <Col>
-          <CreateNew namecreate="Create new asset" />
+          <Link to="/new-asset">
+            <CreateNew namecreate="Create new asset" />
+          </Link>
         </Col>
       </Row>
     </>
