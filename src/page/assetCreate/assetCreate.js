@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router';
-
+import { Link } from 'react-router-dom';
 import { Row, Col, Button } from 'reactstrap';
 import '../../style.css';
 
@@ -34,11 +34,13 @@ import '../../style.css';
 export default function AssetCreateNew(){
     const { id } = useParams();
     const [dataEdit, setEdit] = React.useState(null)
+    const [stateSelected, setStateSelected] = React.useState(null)
     React.useEffect(() => {
         if (id) {
-          let data = asset[1]
-          // let data = asset.filter((data) => data.id === id)
+          //let data = asset[1]
+          let data = asset.find((data) => data.id === Number(id))
           setEdit(data);
+          setStateSelected(data.state)
           console.log(data)
             //get to server;
             // dataEdit = dataServer
@@ -56,6 +58,11 @@ export default function AssetCreateNew(){
     event.preventDefault();
     console.log(myObj);
   };
+
+  const  handleChangeState = (event) =>{
+    setStateSelected(Number(event.target.value))
+    console.log(event.target.value);
+  }
     return (
       <>
         <h5 className="name-list">Create New Asset</h5>
@@ -113,9 +120,10 @@ export default function AssetCreateNew(){
                 <input
                   type="radio"
                   name="radio"
-                  value={item.name}
+                  value={item.id}
                   name="radioAvailable"
-                  checked ={dataEdit?.state === item.id}
+                  onChange ={handleChangeState}
+                  checked ={stateSelected === item.id}
                 />
                 <span class="checkmark" />
               </label>
@@ -128,9 +136,11 @@ export default function AssetCreateNew(){
                 <Button color="danger" type="submit">
                   Save
                 </Button>
-                <Button type="reset" outline color="secondary" style={{ marginLeft: 30 }}>
-                  Cancel
-                </Button>
+                <Link to="/asset">
+                    <Button type="reset" outline color="secondary" style={{ marginLeft: 30 }}>
+                      Cancel
+                    </Button>
+                </Link>
               </div>
             </Col>
             <Col />
