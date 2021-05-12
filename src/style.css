@@ -275,19 +275,19 @@ form.example button {
   bottom: 0;
 }
 
-#checkboxes {
+.checkboxes {
   border: 1px #dadada solid;
   width: 206px;
   margin-left: 2px;
   display: none;
 }
 
-#checkboxes label {
+.checkboxes label {
   display: block;
   padding-left: 5px;
 }
 
-#checkboxes label:hover {
+.checkboxes label:hover {
   background-color: rgba(207, 35, 56, 1);
   color: #ffffff;
 }
