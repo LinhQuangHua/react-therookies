@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap';
+import { Link } from 'react-router-dom';
 import SelectDate from '../../component/SelectDate';
 import SearchBar from '../../component/SearchBar';
 import CreateNew from '../../component/CreateNew';
@@ -20,7 +21,9 @@ export default function Assignment() {
           <SearchBar />
         </Col>
         <Col>
-          <CreateNew namecreate="Create new assignment" />
+          <Link to="/new-assignment">
+            <CreateNew namecreate="Create new assignment" />
+          </Link>
         </Col>
       </Row>
     </>

@@ -301,10 +301,10 @@ form.example button {
 }
 
 .col-asset {
-  width: 11%;
+  width: 13%;
 }
 
-/* --- UserCreate --- */
+/* --- User Form --- */
 
 .last-name-user,
 .first-name-user {
@@ -326,7 +326,6 @@ form.example button {
 .area-button-user {
   float: right;
   margin-top: 20px;
-  padding-right: 40px;
 }
 
 .submit-create-user {
@@ -338,5 +337,45 @@ form.example button {
 }
 
 .col-user {
-  width: 11%;
+  width: 12%;
+}
+
+/* --- Assignment Form --- */
+
+.username-assignment,
+.assetname-assignment {
+  width: 200px;
+  height: 27px;
+  border-radius: 7px;
+}
+
+.date-assignment {
+  width: 200px;
+  border-radius: 7px;
+}
+
+.col-create-assingment-note {
+  margin-left: 0px;
+}
+
+.note-assignment {
+  border-radius: 7px;
+}
+
+.area-button-assignment {
+  float: right;
+  margin-top: 20px;
+  padding-right: 0px;
+}
+
+.submit-create-assignment {
+  float: right;
+}
+
+.form-assignment {
+  margin-top: 40px;
+}
+
+.col-assignment {
+  width: 12.5%;
 }
