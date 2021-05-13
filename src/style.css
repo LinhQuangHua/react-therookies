@@ -246,7 +246,7 @@ form.example button {
 /* Style the indicator (dot/circle) */
 .container-radio .checkmark:after {
   top: 9px;
-  left: 9px;
+  left: 8.9px;
   width: 8px;
   height: 8px;
   border-radius: 50%;
