@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap';
+import { Link } from 'react-router-dom';
 import SearchBar from '../../component/SearchBar';
 import CreateNew from '../../component/CreateNew';
 import FilterState from '../../component/FilterState';
@@ -17,7 +18,9 @@ export default function User() {
           <SearchBar />
         </Col>
         <Col>
-          <CreateNew namecreate="Create new user" />
+          <Link to="/new-user">
+            <CreateNew namecreate="Create new user" />
+          </Link>
         </Col>
       </Row>
     </>

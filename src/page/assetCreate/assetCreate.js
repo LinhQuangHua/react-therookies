@@ -40,7 +40,7 @@ const asset = [
 ];
 
 export default function AssetCreateNew() {
-  const { id } = useParams();
+  const { id } = useParams(); // get id from url
   const [dataEdit, setEdit] = React.useState(null);
   const [stateSelected, setStateSelected] = React.useState(null);
   const [stateCurrent, setStateCurrent] = React.useState([]);
@@ -146,7 +146,7 @@ export default function AssetCreateNew() {
           </Col>
           <Col className="col-create-new">
             {stateCurrent.map(item => (
-              <label class="container-radio">
+              <label className="container-radio">
                 {item.name}
                 <input
                   type="radio"
@@ -156,13 +156,13 @@ export default function AssetCreateNew() {
                   onChange={handleChangeState}
                   checked={stateSelected === item.id}
                 />
-                <span class="checkmark" />
+                <span className="checkmark" />
               </label>
             ))}
           </Col>
         </Row>
         <Row>
-          <Col xs="4" className="area-button">
+          <Col xs="4" className="area-button-user">
             <div className="submit-create-asset">
               <Button color="danger" type="submit">
                 Save
@@ -172,7 +172,7 @@ export default function AssetCreateNew() {
                   type="reset"
                   outline
                   color="secondary"
-                  style={{ marginLeft: 30 }}
+                  className="btn-cancel"
                 >
                   Cancel
                 </Button>

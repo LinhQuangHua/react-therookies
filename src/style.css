@@ -118,7 +118,75 @@ form.example button {
   border-radius: 0px 5px 5px 0px;
 }
 
-/*assetCreate*/
+/*filter bar*/
+
+.fa.fa-filter {
+  position: absolute;
+  left: 89%;
+  border: 1px solid grey;
+  padding: 8px;
+  border-radius: 0px 5px 5px 0px;
+  z-index: -1;
+  top: 1%;
+}
+
+.filter-cate {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+  padding-left: 10px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.multiselect {
+  width: 200px;
+}
+
+.selectBox {
+  position: relative;
+}
+
+.selectBox .filter-cate {
+  font-size: 15px;
+  width: 179px;
+  height: 34px;
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.checkboxes {
+  border: 1px #dadada solid;
+  width: 206px;
+  margin-left: 2px;
+  display: none;
+}
+
+.checkboxes label {
+  display: block;
+  padding-left: 5px;
+}
+
+.checkboxes label:hover {
+  background-color: rgba(207, 35, 56, 1);
+  color: #ffffff;
+}
+
+.checkboxlist {
+  margin-top: 5px;
+}
+
+.checkboxlist .checkbox {
+  margin: 5px;
+}
+
+/* --- assetCreate --- */
 
 /* The container */
 .container-radio {
@@ -132,6 +200,7 @@ form.example button {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  margin-right: 10px;
 }
 
 /* Hide the browser's default radio button */
@@ -224,6 +293,9 @@ form.example button {
   float: right;
 }
 
+.btn-cancel {
+  margin-left: 30px;
+}
 .form-asset {
   margin-top: 40px;
 }
@@ -232,70 +304,39 @@ form.example button {
   width: 11%;
 }
 
-/*filter bar*/
+/* --- UserCreate --- */
 
-.fa.fa-filter {
-  position: absolute;
-  left: 89%;
-  border: 1px solid grey;
-  padding: 8px;
-  border-radius: 0px 5px 5px 0px;
-  z-index: -1;
-  top: 1%;
-}
-
-.filter-cate {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  text-indent: 1px;
-  text-overflow: '';
-  padding-left: 10px;
-  border-radius: 5px 0px 0px 5px;
-}
-
-.multiselect {
+.last-name-user,
+.first-name-user {
   width: 200px;
+  height: 27px;
+  border-radius: 7px;
 }
 
-.selectBox {
-  position: relative;
+.date-user {
+  width: 200px;
+  border-radius: 7px;
 }
 
-.selectBox .filter-cate {
-  font-size: 15px;
-  width: 179px;
-  height: 34px;
+.category-type {
+  width: 200px;
+  border-radius: 7px;
 }
 
-.overSelect {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+.area-button-user {
+  float: right;
+  margin-top: 20px;
+  padding-right: 40px;
 }
 
-.checkboxes {
-  border: 1px #dadada solid;
-  width: 206px;
-  margin-left: 2px;
-  display: none;
+.submit-create-user {
+  float: right;
 }
 
-.checkboxes label {
-  display: block;
-  padding-left: 5px;
+.form-user {
+  margin-top: 40px;
 }
 
-.checkboxes label:hover {
-  background-color: rgba(207, 35, 56, 1);
-  color: #ffffff;
-}
-
-.checkboxlist {
-  margin-top: 5px;
-}
-
-.checkboxlist .checkbox {
-  margin: 5px;
+.col-user {
+  width: 11%;
 }
