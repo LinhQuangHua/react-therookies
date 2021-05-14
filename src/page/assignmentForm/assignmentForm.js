@@ -54,12 +54,17 @@ export default function UserForm() {
             <span>User</span>
           </Col>
           <Col className="col-assignment-new">
-            <input
-              type="text"
-              className="username-assignment"
-              name="userName"
-              defaultValue={dataEdit?.username ?? ''}
-            />
+            <div class="wrapBox">
+              <div class="searchBox">
+                <span class="fa fa-search" id="searchIcon" />
+                <input
+                  type="text"
+                  class="searchName"
+                  name="userName"
+                  defaultValue={dataEdit?.username ?? ''}
+                />
+              </div>
+            </div>
           </Col>
         </Row>
         <Row className="row-create-new">
@@ -67,12 +72,17 @@ export default function UserForm() {
             <span>Asset</span>
           </Col>
           <Col className="col-assignment-new">
-            <input
-              type="text"
-              className="assetname-assignment"
-              name="assetName"
-              defaultValue={dataEdit?.assetname ?? ''}
-            />
+            <div class="wrapBox">
+              <div class="searchBox">
+                <span class="fa fa-search" id="searchIcon" />
+                <input
+                  type="text"
+                  class="searchName"
+                  name="assetName"
+                  defaultValue={dataEdit?.assetname ?? ''}
+                />
+              </div>
+            </div>
           </Col>
         </Row>
         <Row className="row-create-new">

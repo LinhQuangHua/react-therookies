@@ -75,6 +75,7 @@ p {
 #select-date[type='date']::before {
   content: attr(data-placeholder);
   width: 165px;
+  border: 1px solid grey;
 }
 
 #select-date[type='date']:focus::before,
@@ -275,6 +276,7 @@ form.example button {
 .date-asset {
   width: 205px;
   border-radius: 7px;
+  border: 1px solid grey;
 }
 
 .container-radio {
@@ -316,6 +318,7 @@ form.example button {
 .date-user {
   width: 200px;
   border-radius: 7px;
+  border: 1px solid grey;
 }
 
 .category-type {
@@ -352,6 +355,7 @@ form.example button {
 .date-assignment {
   width: 200px;
   border-radius: 7px;
+  border: 1px solid grey;
 }
 
 .col-create-assingment-note {
@@ -365,7 +369,7 @@ form.example button {
 .area-button-assignment {
   float: right;
   margin-top: 20px;
-  padding-right: 0px;
+  padding-right: 20px;
 }
 
 .submit-create-assignment {
@@ -378,4 +382,32 @@ form.example button {
 
 .col-assignment {
   width: 12.5%;
+}
+
+#searchIcon {
+  position: absolute;
+  left: 90%;
+  padding: 8px;
+  color: grey;
+  top: -2.6px;
+}
+
+.searchName {
+  padding-left: 10px;
+  border-radius: 5px 5px 5px 5px;
+  border: 1px solid grey;
+}
+
+.wrapBox {
+  width: 185px;
+}
+
+.searchBox {
+  position: relative;
+}
+
+.searchBox .searchName {
+  font-size: 15px;
+  width: 200px;
+  height: 27px;
 }
