@@ -42,6 +42,17 @@ export default function SelectCate() {
     console.log(event.target.value);
   };
 
+  const CreateCate = event => {
+    event.preventDefault();
+    const cate = {
+      // name: String(event.target.nameCate.value),
+      // shortname: String(event.target.shortNameCate.value)
+      name: document.getElementById('nameCate').value,
+      shortname: document.getElementById('shortname').value
+    };
+    console.log(cate);
+  };
+
   return (
     <form>
       <div class="multiselect">
@@ -72,10 +83,16 @@ export default function SelectCate() {
               type="text"
               placeholder="Blutooth Mouse"
               id="nameCate"
+              name="nameCate"
               onChange={handleChangeNewCate}
             />
-            <input type="text" placeholder="BM" id="shortname" disabled />
-            <i class="fa fa-check" />
+            <input
+              type="text"
+              placeholder="BM"
+              id="shortname"
+              name="shortNameCate"
+            />
+            <i class="fa fa-check" onClick={CreateCate} />
             <i class="fa fa-times" onClick={showCheckboxes} />
           </label>
         </div>
