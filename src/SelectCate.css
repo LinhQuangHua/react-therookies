@@ -1,0 +1,76 @@
+.fa.fa-chevron-down {
+  position: absolute;
+  left: 89%;
+  padding: 8px;
+  z-index: 1;
+  top: 1%;
+}
+
+.filter-cate {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+.multiselect {
+  width: 200px;
+}
+
+.selectBox {
+  position: relative;
+}
+
+.selectBox .filter-cate {
+  font-size: 15px;
+  width: 207px;
+  height: 34px;
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: -12px;
+  top: 0;
+  bottom: 0;
+}
+
+#checkboxes {
+  border: 1px #dadada solid;
+  width: 207px;
+  display: none;
+  background-color: rgb(245, 245, 245);
+  padding-top: 10px;
+}
+
+#checkboxes label {
+  display: block;
+}
+
+.checkboxlist {
+  margin-top: 5px;
+  padding: 5px 5px 10px 10px;
+}
+
+#nameCate {
+  width: 110px;
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+#shortname {
+  width: 27px;
+  font-size: 12px;
+}
+
+.fa.fa-check {
+  color: red;
+  margin-left: 5px;
+}
+
+.fa.fa-times {
+  color: black;
+  margin-left: 5px;
+}

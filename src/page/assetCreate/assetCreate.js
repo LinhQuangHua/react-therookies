@@ -3,6 +3,7 @@ import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 import { Row, Col, Button } from 'reactstrap';
 import '../../style.css';
+import SelectCate from '../../component/SelectCate';
 
 const stateAsset = [
   {
@@ -102,7 +103,7 @@ export default function AssetCreateNew() {
             <span>Category</span>
           </Col>
           <Col className="col-create-new">
-            <select
+            {/* <select
               name="nameCategoryAsset"
               defaultValue={dataEdit?.category ?? ''}
               className="category-asset"
@@ -110,7 +111,8 @@ export default function AssetCreateNew() {
               <option value="Laptop">Laptop</option>
               <option value="Monitor">Monitor</option>
               <option value="Personal Computer">Personal Computer</option>
-            </select>
+            </select> */}
+            <SelectCate />
           </Col>
         </Row>
         <Row className="row-create-new">
